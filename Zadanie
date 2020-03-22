@@ -1,0 +1,25 @@
+import math
+
+print("Dla wyrażenia ax^2 + bx + c = 0")
+a = input('Podaj liczbę a: ')
+b = input("Podaj liczbę b: ")
+c = input('Podaj liczbę c: ')
+
+
+delta = (float(b)**2)-(4*float(a)*float(a))
+
+print("Delta: ", float(delta))
+
+
+
+x1 = (-float(b)-float(math.sqrt(delta)))/(2*float(a))
+x2 = (-float(b)+float(math.sqrt(delta)))/(2*float(a))
+
+if delta < 0:
+    print("brak miejsc zerowych")
+elif delta == 0:
+    x1 == x2
+    print("Miejsce zerowe funkcji: ", x1)
+else:
+    print('Pierwsze miejsce "0": ', x1)
+    print("Drugie miejsce '0': ", x2)
